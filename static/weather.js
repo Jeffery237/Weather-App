@@ -91,7 +91,7 @@ function updateDate(){
         let apiDate = formatDate(new Date(weatherInfo.location.localtime));
         let apiTime = new Date(weatherInfo.location.localtime); 
         apiTime = apiTime.toLocaleTimeString();
-        cityName.textContent = weatherInfo.location.name;
+        cityName.textContent = `${weatherInfo.location.name} , ${weatherInfo.location.country}`;
         date.textContent = `${apiDate} | ${apiTime}`;
         updateUI();
         displayForecastData();
@@ -111,6 +111,7 @@ function search(city){
     }) 
     .then(async (response) => {
         if (response.ok) {
+            console.log('Response status: ', response.status)
             let data = await response.json();
             weatherInfo = data;
             updateDate();

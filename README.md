@@ -1,2 +1,2 @@
 # Weather-App
-Real-time weather information at your fingertips. Check the forecast with this easy-to-use weather app
+A web-based waether application that provides current weather conditions, forecasts and additional weather data for any location. Built using HTML, CSS and JavaScript

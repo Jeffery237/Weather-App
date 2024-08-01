@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="main-container">
+        <div class="date-container">
+            <div class="date">
+                <h1 id="city">Toronto</h1>
+                <p id="date">Thursday, 31 August 2023 | 10:15 PM</p>
+            </div>
+            <div class="search">
+                <input type="text" name="" id="city-name" placeholder="Enter city name" class="city-name">
+                <button id="search-btn" class="search-btn">Search</button>
+            </div>
+            <button class="location-button">
+                <img src="./img/location-white.png" alt="location-icon" id="location-icon"/>
+            </button>
+        </div>
+        <div class="temp-container">
+            <div class="temperature">
+                <p style="font-size: 115px; color: var(--text);" id="degree-celcius">21</p>
+                <div class="degree-celcius">
+                    <p><span id="deg-celcius">°C</span>&nbsp;|&nbsp;<span id="fahrenheit" style="color: rgb(230, 215, 215);">°F</span></p>
+                    <p id="weather-state" style="font-size: larger;">Partly cloudy</p>
+                </div>
+            </div>
+            <div class="w-image">
+                <img src="./img/sun-rain.png" alt="sun-rain" id="weather-image">
+                <div class="weather-info">
+                    <div class="weather-image-info">
+                        <img src="./img/temperature.png" alt="">
+                        <p id="feels-like">Feels like: &nbsp;31&deg;C</p>
+                    </div>
+                    <div class="weather-image-info">
+                        <img src="./img/hunidity.png" alt="">
+                        <p id="humidity">Humidity: &nbsp;15%</p>
+                    </div>
+                    <div class="weather-image-info">
+                        <img src="./img/wind.png" alt="">
+                        <p id="wind">Wind: &nbsp;14 km/h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="days-container">
+          
+        </div>
+    </section>
+    <footer>Copyright &copy; <a href="https://github.com/Jeffery237/Weather-App.git" style="text-decoration: none;">Wanki Jefferson 2024</a></footer>
+    <script src="weather.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+{
+    "builds": [
+      { "src": "weather.html", "use": "@vercel/static" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/weather.html" }
+    ]
+  }
+  

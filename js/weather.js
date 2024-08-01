@@ -91,7 +91,7 @@ function updateDate(){
         let apiDate = formatDate(new Date(weatherInfo.location.localtime));
         let apiTime = new Date(weatherInfo.location.localtime); 
         apiTime = apiTime.toLocaleTimeString();
-        cityName.textContent = `${weatherInfo.location.name} , ${weatherInfo.location.country}`;
+        cityName.textContent = `${weatherInfo.location.name}, ${weatherInfo.location.country}`;
         date.textContent = `${apiDate} | ${apiTime}`;
         updateUI();
         displayForecastData();
